@@ -1,69 +1,69 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Documentación Chat Buho',
-  tagline: 'Guia oficial completa y definitiva de Chat Buho',
-  favicon: 'img/favicon.ico',
+  title: "Documentación Chat Buho",
+  tagline: "Guia oficial completa y definitiva de Chat Buho",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://documentacion.chat.buho.la',
+  url: "https://documentacion.chat.buho.la",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/documentacion/',
+  baseUrl: "/documentacion/",
 
   // GitHub pages deployment config.
-  organizationName: 'chatbuho',
-  projectName: 'documentacion',
-  deploymentBranch: 'gh-pages',
+  organizationName: "chatbuho",
+  projectName: "documentacion",
+  deploymentBranch: "gh-pages",
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'es',
-    locales: ['es'],
+    defaultLocale: "es",
+    locales: ["es"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           // sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/'
+          routeBasePath: "/",
         },
         // blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
   ],
   plugins: [
     require.resolve("@cmfcmf/docusaurus-search-local"),
-    'plugin-image-zoom',
+    "plugin-image-zoom",
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: '',
+        title: "",
         logo: {
-          alt: 'Documentación de Chat Buho',
-          src: 'https://buho.la/images/chat/chat-buho.svg',
+          alt: "Documentación de Chat Buho",
+          src: "https://buho.la/images/chat/chat-buho.svg",
         },
         items: [
           // {
@@ -81,7 +81,7 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         // links: [
         //   {
         //     title: 'Docs',
@@ -128,21 +128,21 @@ const config = {
       prism: {
         theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['php'],
+        additionalLanguages: ["php"],
       },
       theme: {
-        customCss: require.resolve('./src/css/custom.css'),
+        customCss: require.resolve("./src/css/custom.css"),
       },
       imageZoom: {
-        selector: '.markdown img',
+        selector: ".markdown img",
       },
     }),
-    scripts: [
-      {
-        src: 'https://static.buho.la/fastura/documentacion.js',
-        async: true,
-      },
-    ],
+  scripts: [
+    {
+      src: "https://static.buho.la/fastura/documentacion.js",
+      async: true,
+    },
+  ],
 };
 
 module.exports = config;
