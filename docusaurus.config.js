@@ -63,7 +63,7 @@ const config = {
         title: "",
         logo: {
           alt: "Documentación de Chat Buho",
-          src: "https://buho.la/images/chat/chat-buho.svg",
+          src: "https://previews.123rf.com/images/musri/musri1501/musri150100043/35305442-dibujos-animados-b%C3%BAho-feliz.jpg",
         },
         items: [
           // {
